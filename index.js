@@ -14,7 +14,6 @@ const getweather = (city) =>{
 )
   .then((response) => response.json())
   .then((response) => {
-      console.log(response);
     cloud_pct.innerHTML = response.cloud_pct;
     feels_like.innerHTML = response.feels_like;
     humidity.innerHTML = response.humidity;
